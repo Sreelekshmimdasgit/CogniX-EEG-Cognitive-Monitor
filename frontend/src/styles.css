@@ -1,0 +1,425 @@
+/* ============================
+   GLOBAL SETTINGS
+============================ */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family: "Inter", sans-serif;
+
+color:white;
+
+background:#05070d;
+
+line-height:1.6;
+
+}
+
+/* ============================
+   MAIN CONTAINER
+============================ */
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px;
+
+}
+
+/* ============================
+   HEADER
+============================ */
+
+.header{
+
+margin-bottom:40px;
+
+text-align:center;
+
+}
+
+.logo-section{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+/* Brain icon */
+
+.logo-circle{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#00E0FF,#00FFC8);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:26px;
+
+box-shadow:0 0 15px rgba(0,224,255,0.6);
+
+}
+
+/* CogniX Title */
+
+.title-section h1{
+
+font-size:48px;
+
+letter-spacing:2px;
+
+background:linear-gradient(
+90deg,
+#00e0ff,
+#ff4fd8,
+#00ffc8
+);
+
+/* standard property */
+background-clip:text;
+
+/* chrome / safari support */
+-webkit-background-clip:text;
+
+/* make text transparent so gradient shows */
+color:transparent;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+color:#9db1c9;
+
+margin-top:5px;
+
+}
+
+/* Divider */
+
+.header-line{
+
+margin-top:20px;
+
+height:1px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#00E0FF,
+#FF4FD8,
+transparent
+);
+
+}
+
+/* ============================
+   UPLOAD PANEL
+============================ */
+
+.upload-panel{
+
+margin-bottom:40px;
+
+padding:20px;
+
+background:#0b0f1a;
+
+border-radius:12px;
+
+box-shadow:0 0 20px rgba(0,224,255,0.08);
+
+}
+
+.upload-panel h2{
+
+color:#00E0FF;
+
+margin-bottom:8px;
+
+}
+
+.upload-description{
+
+color:#9db1c9;
+
+font-size:14px;
+
+margin-bottom:15px;
+
+}
+
+.upload-controls{
+
+display:flex;
+
+gap:15px;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+/* File input */
+
+input[type="file"]{
+
+background:#05070d;
+
+border:1px solid rgba(0,224,255,0.3);
+
+padding:10px;
+
+border-radius:8px;
+
+color:white;
+
+}
+
+/* Buttons */
+
+button{
+
+background:linear-gradient(
+90deg,
+#00E0FF,
+#00FFC8
+);
+
+border:none;
+
+color:#00131a;
+
+padding:12px 20px;
+
+border-radius:8px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 0 20px rgba(0,224,255,0.5);
+
+}
+
+/* ============================
+   MODEL OUTPUT
+============================ */
+
+.model-output{
+
+margin-top:30px;
+
+}
+
+.model-output h2{
+
+color:#00E0FF;
+
+margin-bottom:15px;
+
+}
+
+/* ============================
+   GRID
+============================ */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+/* ============================
+   CARD DESIGN
+============================ */
+
+.card{
+
+background:#0b0f1a;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 0 20px rgba(0,224,255,0.08);
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 30px rgba(0,224,255,0.25);
+
+}
+
+.card h3{
+
+color:#9cc6ff;
+
+margin-bottom:8px;
+
+}
+
+/* Prediction value */
+
+.value{
+
+font-size:22px;
+
+font-weight:600;
+
+color:#ffffff;
+
+}
+
+/* Description */
+
+.confidence{
+
+font-size:14px;
+
+color:#9db1c9;
+
+margin-top:5px;
+
+}
+
+/* ============================
+   STRESS ANALYSIS
+============================ */
+
+.stress-section{
+
+margin-top:40px;
+
+}
+
+.stress-section h2{
+
+color:#00E0FF;
+
+margin-bottom:15px;
+
+}
+
+/* ============================
+   EEG VISUALIZATION
+============================ */
+
+.large{
+
+margin-top:35px;
+
+padding:20px;
+
+background:#0b0f1a;
+
+border-radius:12px;
+
+box-shadow:0 0 20px rgba(0,224,255,0.08);
+
+}
+
+.large h2{
+
+color:#00E0FF;
+
+margin-bottom:10px;
+
+}
+
+/* ============================
+   DOWNLOAD REPORT
+============================ */
+
+.download-section{
+
+margin-top:40px;
+
+padding:20px;
+
+background:#0b0f1a;
+
+border-radius:12px;
+
+box-shadow:0 0 20px rgba(0,224,255,0.08);
+
+text-align:center;
+
+}
+
+.download-section h2{
+
+color:#00E0FF;
+
+margin-bottom:10px;
+
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+@media (max-width:900px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+padding:25px;
+
+}
+
+.title-section h1{
+
+font-size:36px;
+
+}
+
+}
